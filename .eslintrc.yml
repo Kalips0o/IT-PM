@@ -4,7 +4,6 @@ env:
 extends:
   - airbnb
   - plugin:react/recommended
-  - plugin:functional/recommended
   - plugin:react-hooks/recommended
 overrides: []
 parserOptions:
@@ -13,5 +12,7 @@ parserOptions:
 plugins:
   - react
 rules:
+  import/extensions: 0
+  import/no-unresolved: 0
   react/react-in-jsx-scope: 0
   react/jsx-filename-extension: [1, { "extensions": [".js", ".jsx"] }]
