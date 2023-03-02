@@ -4,9 +4,8 @@ env:
 extends:
   - airbnb
   - plugin:react/recommended
-  - plugin:functional/recommended
   - plugin:react-hooks/recommended
-overrides: []
+overrides: [ ]
 parserOptions:
   ecmaVersion: latest
   sourceType: module
@@ -14,4 +13,4 @@ plugins:
   - react
 rules:
   react/react-in-jsx-scope: 0
-  react/jsx-filename-extension: [1, { "extensions": [".js", ".jsx"] }]
+  react/jsx-filename-extension: [ 1, { "extensions": [ ".js", ".jsx" ] } ]
