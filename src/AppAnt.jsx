@@ -1,6 +1,6 @@
 import { Layout, Space } from 'antd';
-import SideMenu from './components/SideMenu/SideMenu';
-import Navbar from './components/Navbar/Navbar';
+import SideMenu from './components/SideMenu/SideMenu.jsx';
+import Navbar from './components/Navbar/Navbar.jsx';
 
 const { Header, Sider, Content } = Layout;
 
@@ -38,11 +38,6 @@ const siderStyle = {
     color: '#fff',
     backgroundColor: '#3ba0e9',
 };
-// const footerStyle = {
-//     textAlign: 'center',
-//     color: '#fff',
-//     backgroundColor: '#7dbcea',
-// };
 
 function AppAnt() {
     return (
@@ -61,8 +56,9 @@ function AppAnt() {
                     <Header style={headerStyle}>
                         <Navbar />
                     </Header>
-                    <Content style={contentStyle} />
-                    {/* <Footer style={footerStyle}>Footer</Footer> */}
+                    <Content style={contentStyle}>
+                        content
+                    </Content>
                 </Layout>
             </Layout>
         </Space>
@@ -70,3 +66,25 @@ function AppAnt() {
 }
 
 export default AppAnt;
+
+/*
+        <Space
+            direction="vertical"
+            style={{
+                width: '100%',
+            }}
+            size={[0, 48]}
+        >
+            <Layout>
+                <Sider style={siderStyle}>
+                    <SideMenu />
+                </Sider>
+                <Layout>
+                    <Header style={headerStyle}>
+                        <Navbar />
+                    </Header>
+                    <Content style={contentStyle} />
+                </Layout>
+            </Layout>
+        </Space>
+*/
