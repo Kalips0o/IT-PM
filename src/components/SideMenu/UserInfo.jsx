@@ -1,13 +1,11 @@
-export const UserInfo = () => {
-
- const text ={
-        fontFamily:' Stolzl',
+function UserInfo() {
+    const text = {
+        fontFamily: 'Stolzl',
         fontStyle: 'normal',
         fontWeight: '400',
         fontSize: '12px',
         lineHeight: '14px',
-    }
-
+    };
 
     return (
         <div style={text}>
@@ -15,5 +13,7 @@ export const UserInfo = () => {
             <h1> User Name </h1>
             <p> Nick Name</p>
         </div>
-    )
+    );
 }
+
+export default UserInfo;
