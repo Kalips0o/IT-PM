@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Navbar.module.css';
-import logo from '../../assets/icons/Logo.svg';
+import logo from '../../assets/ITPMLogo.svg';
 
 function Navbar() {
     return (
