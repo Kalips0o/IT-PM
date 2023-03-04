@@ -20,3 +20,4 @@ rules:
   react/jsx-indent: ["error", 4, { indentLogicalExpressions: true }]
   react/jsx-indent-props: ["off", 4]
   react/jsx-props-no-spreading: "off"
+  linebreak-style: "warn"
