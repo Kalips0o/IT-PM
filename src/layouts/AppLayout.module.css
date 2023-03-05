@@ -1,13 +1,17 @@
+
 .appHeader {
-    text-align: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 20px;
     margin-left: 30px;
     margin-right: 20px;
-    color: #fff;
+    /*color: #FFFFFF;*/
+    width: 1078px;
     height: 100px;
     padding-inline: 50px;
-    line-height: 100px;
-    background-color: #7dbcea;
+
+    background-color:  #FFFFFF;
 }
 
 .appContent {
@@ -15,6 +19,7 @@
     margin-left: 30px;
     margin-right: 20px;
     margin-bottom: 20px;
+    width: 1078px;
     text-align: center;
     min-height: 120px;
     line-height: 120px;
@@ -31,3 +36,5 @@
     color: #fff;
     background-color: #3ba0e9;
 }
+
+
