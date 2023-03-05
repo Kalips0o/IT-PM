@@ -1,11 +1,11 @@
-import {Outlet} from 'react-router-dom';
-import {Layout, Space} from 'antd';
+import { Outlet } from 'react-router-dom';
+import { Layout, Space } from 'antd';
 import SideMenu from '../components/SideMenu/SideMenu.jsx';
 import Navbar from '../components/Navbar/Navbar.jsx';
 
 import styles from './AppLayout.module.css';
 
-const {Header, Sider, Content} = Layout;
+const { Header, Sider, Content } = Layout;
 
 function AppLayout() {
     return (
@@ -18,14 +18,14 @@ function AppLayout() {
         >
             <Layout>
                 <Sider className={styles.appSider}>
-                    <SideMenu/>
+                    <SideMenu />
                 </Sider>
                 <Layout>
                     <Header className={styles.appHeader}>
-                        <Navbar/>
+                        <Navbar />
                     </Header>
                     <Content className={styles.appContent}>
-                        <Outlet/>
+                        <Outlet />
                     </Content>
                 </Layout>
             </Layout>
