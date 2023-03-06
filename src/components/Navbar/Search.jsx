@@ -9,14 +9,12 @@ const onSearch = (value) => console.log(value);
 function SearchBlock() {
     return (
         <Space
-            className={style.search}
+            className={style.space}
         >
             <Search
+                className={style.search}
                 placeholder="Поиск"
                 onSearch={onSearch}
-                style={{
-                    width: 200,
-                }}
             />
 
         </Space>

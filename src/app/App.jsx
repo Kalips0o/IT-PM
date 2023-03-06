@@ -2,10 +2,9 @@ import {
     createBrowserRouter,
     RouterProvider,
 } from 'react-router-dom';
-
-import AppLayout from '../layouts/AppLayout.jsx';
 import MainPage from '../pages/MainPage.jsx';
 import ErrorPage from '../pages/ErrorPage.jsx';
+import AppLayout from '../layouts/AppLayout';
 
 const router = createBrowserRouter([
     {

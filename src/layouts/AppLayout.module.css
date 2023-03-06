@@ -1,4 +1,9 @@
-
+.body {
+    background: #2980b9;
+    color: #FFF;
+    text-align: center;
+    margin: 0;
+}
 .appHeader {
     display: flex;
     align-items: center;
@@ -35,6 +40,9 @@
     line-height: 120px;
     color: #fff;
     background-color: #3ba0e9;
+}
+.layout{
+    height: 100vh
 }
 
 

@@ -1,11 +1,11 @@
-import { Outlet } from 'react-router-dom';
 import { Layout, Space } from 'antd';
+import { Outlet } from 'react-router-dom';
 import SideMenu from '../components/SideMenu/SideMenu.jsx';
 import Navbar from '../components/Navbar/Navbar.jsx';
-
 import styles from './AppLayout.module.css';
+import appSider from './AppLayout.style';
 
-const { Header, Sider, Content } = Layout;
+const { Header, Content, Sider } = Layout;
 
 function AppLayout() {
     return (
@@ -16,8 +16,8 @@ function AppLayout() {
             }}
             size={[0, 48]}
         >
-            <Layout>
-                <Sider className={styles.appSider}>
+            <Layout className={styles.layout}>
+                <Sider width={292} style={appSider}>
                     <SideMenu />
                 </Sider>
                 <Layout>
