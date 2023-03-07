@@ -12,6 +12,14 @@ import SendMessageIcon from './SendMessage.jsx';
 import TrashSimpleIcon from './TrashSimple.jsx';
 import XIcon from './X.jsx';
 import XsmallIcon from './Xsmall.jsx';
+import ChartPieIcon from './ChartPie.jsx';
+import ChatCircleIcon from './ChatCircle.jsx';
+import ChatsCircleIcon from './ChatsCircle.jsx';
+import NotionIcon from './Notion.jsx';
+import PuzzlePieceIcon from './PuzzlePiece.jsx';
+import StickerIcon from './Sticker.jsx';
+import TableIcon from './Table.jsx';
+import UserIcon from './User.jsx';
 
 export {
     ArrowUpRightIcon,
@@ -28,4 +36,12 @@ export {
     TrashSimpleIcon,
     XIcon,
     XsmallIcon,
+    ChartPieIcon,
+    ChatCircleIcon,
+    ChatsCircleIcon,
+    NotionIcon,
+    PuzzlePieceIcon,
+    StickerIcon,
+    TableIcon,
+    UserIcon,
 };
