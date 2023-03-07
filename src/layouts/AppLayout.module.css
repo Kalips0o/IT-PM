@@ -4,6 +4,7 @@
     text-align: center;
     margin: 0;
 }
+
 .appHeader {
     display: flex;
     align-items: center;
@@ -11,12 +12,10 @@
     margin-top: 20px;
     margin-left: 30px;
     margin-right: 20px;
-    /*color: #FFFFFF;*/
-    width: 1078px;
     height: 100px;
     padding-inline: 50px;
 
-    background-color:  #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 .appContent {
@@ -24,7 +23,6 @@
     margin-left: 30px;
     margin-right: 20px;
     margin-bottom: 20px;
-    width: 1078px;
     text-align: center;
     min-height: 120px;
     line-height: 120px;
@@ -32,17 +30,10 @@
     background-color: #108ee9;
 }
 
-.appSider {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    line-height: 120px;
-    color: #fff;
-    background-color: #3ba0e9;
-}
-.layout{
-    height: 100vh
+.layout {
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
 }
 
 

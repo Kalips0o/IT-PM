@@ -4,18 +4,18 @@ import UserInfo from './UserInfo/UserInfo.jsx';
 import styles from './SideMenu.module.css';
 import Chat from './Chat/Chat';
 import DeskMenu from './Desks/DeskMenu';
+import { TableIcon } from '../Icons';
 
 function SideMenu() {
     return (
         <div className={styles.sideMenu}>
             <UserAvatar />
             <UserInfo />
+            <Chat />
             <div>
-                <Chat />
+                <TableIcon />
             </div>
-            <div>
-                <DeskMenu />
-            </div>
+            <DeskMenu />
         </div>
     );
 }

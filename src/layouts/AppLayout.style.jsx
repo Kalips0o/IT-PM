@@ -3,7 +3,7 @@ const appSider = {
     marginBottom: '20px',
     marginLeft: '20px',
     textAlign: 'center',
-    lineHeight: '120px',
+    height: 'auto',
     color: '#ffffff',
     backgroundColor: '#ffffff',
 };

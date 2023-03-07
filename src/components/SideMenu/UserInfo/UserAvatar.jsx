@@ -3,7 +3,16 @@ import { Avatar, Space } from 'antd';
 
 function UserAvatar() {
     return (
-        <Space direction="vertical" size={90}>
+        <Space
+            direction="vertical"
+            size={90}
+            style={{
+                width: '100%',
+                marginTop: '15px',
+                marginBottom: '10px',
+                alignItems: 'center',
+            }}
+        >
             <Space wrap size={90}>
                 <Avatar size={90} src="https://cs14.pikabu.ru/post_img/2023/02/13/8/1676295806139337963.jpg" />
             </Space>
