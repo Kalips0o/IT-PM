@@ -2,6 +2,7 @@ import { CalendarOutlined, MailOutlined } from '@ant-design/icons';
 import { Menu } from 'antd';
 import ArrowUpRightIcon from '../../Icons/icons24/ArrowUpRight';
 import ChatCenteredIcon from '../../Icons/icons24/ChatCentered';
+import styles from './DeskMenu.module.css';
 
 function getItem(label, key, icon, children) {
     return {
@@ -33,9 +34,7 @@ const items = [
 function DeskMenu() {
     return (
         <Menu
-            style={{
-                width: 256,
-            }}
+            className={styles.buttonDesk}
             defaultSelectedKeys={['1']}
             defaultOpenKeys={['sub1']}
             items={items}
