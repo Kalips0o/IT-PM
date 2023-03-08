@@ -2,6 +2,7 @@ import {
     createBrowserRouter,
     RouterProvider,
 } from 'react-router-dom';
+import { ConfigProvider } from 'antd';
 
 import AppLayout from '../layouts/AppLayout.jsx';
 import MainPage from '../pages/MainPage.jsx';
@@ -23,7 +24,14 @@ const router = createBrowserRouter([
 
 function App() {
     return (
-        <RouterProvider router={router} />
+        <ConfigProvider
+            theme={{
+                token: {},
+                components: {},
+            }}
+        >
+            <RouterProvider router={router} />
+        </ConfigProvider>
     );
 }
 
