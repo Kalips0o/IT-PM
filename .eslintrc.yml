@@ -14,9 +14,10 @@ plugins:
 rules:
   import/extensions: "off"
   import/no-unresolved: "off"
+  indent: ["error", 4]
   react/react-in-jsx-scope: "off"
   react/jsx-filename-extension: ["warn", { "extensions": [ ".js", ".jsx" ] } ]
-  indent: ["error", 4]
   react/jsx-indent: ["error", 4, { indentLogicalExpressions: true }]
   react/jsx-indent-props: ["off", 4]
   react/jsx-props-no-spreading: "off"
+  react/prop-types: "off"
