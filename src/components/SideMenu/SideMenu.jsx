@@ -3,8 +3,7 @@ import UserAvatar from './UserInfo/UserAvatar.jsx';
 import UserInfo from './UserInfo/UserInfo.jsx';
 import styles from './SideMenu.module.css';
 import Chat from './Chat/Chat';
-import DeskMenu from './Desks/DeskMenu';
-import { TableIcon } from '../Icons';
+import DeskAccordion from './Desks/DeskAccordion';
 
 function SideMenu() {
     return (
@@ -12,10 +11,7 @@ function SideMenu() {
             <UserAvatar />
             <UserInfo />
             <Chat />
-            <div>
-                <TableIcon />
-            </div>
-            <DeskMenu />
+            <DeskAccordion />
         </div>
     );
 }
