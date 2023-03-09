@@ -1,0 +1,16 @@
+@use '../../../../styles/vars';
+
+.box {
+    width: 404px;
+    height: 473px;
+    padding: 20px 32px 24px;
+    border-radius: vars.$radius-16;
+
+    background-color: vars.$bg;
+
+    :global {
+        .ant-col {
+            border-bottom: 1px solid vars.$card-stroke;
+        }
+    }
+}

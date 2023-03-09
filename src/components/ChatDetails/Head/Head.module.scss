@@ -1,0 +1,25 @@
+@use '../../../styles/vars';
+
+.head {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.heading {
+    :global {
+        .ant-typography {
+            color: vars.$dark-blue;
+            font-weight: 400;
+        }
+        .ant-divider {
+            margin-bottom: 0;
+            border: 2px solid vars.$dark-blue;
+        }
+    }
+}
+
+.chatname {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
