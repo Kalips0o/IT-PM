@@ -4,7 +4,6 @@ env:
 extends:
   - airbnb
   - plugin:react/recommended
-  - plugin:functional/recommended
   - plugin:react-hooks/recommended
 overrides: []
 parserOptions:
@@ -13,5 +12,12 @@ parserOptions:
 plugins:
   - react
 rules:
-  react/react-in-jsx-scope: 0
-  react/jsx-filename-extension: [1, { "extensions": [".js", ".jsx"] }]
+  import/extensions: "off"
+  import/no-unresolved: "off"
+  indent: ["error", 4]
+  react/react-in-jsx-scope: "off"
+  react/jsx-filename-extension: ["warn", { "extensions": [ ".js", ".jsx" ] } ]
+  react/jsx-indent: ["error", 4, { indentLogicalExpressions: true }]
+  react/jsx-indent-props: ["off", 4]
+  react/jsx-props-no-spreading: "off"
+  react/prop-types: "off"

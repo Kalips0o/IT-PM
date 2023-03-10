@@ -1,0 +1,9 @@
+@use '../../styles/vars';
+
+.chatDetails {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 60px 73px;
+    border-radius: vars.$radius-60;
+    background-color: vars.$white;
+}
