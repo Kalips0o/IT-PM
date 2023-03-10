@@ -1,0 +1,33 @@
+.space {
+    align-items: center;
+}
+
+.search {
+    text-align: center;
+}
+
+.search input {
+    border-color: rgba(255, 255, 255, 0);
+}
+
+.search input::placeholder {
+    color: #4D90F1;
+    font-family: Stolzl;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.search button {
+    border-color: rgba(255, 255, 255, 0);
+
+}
+
+.search button {
+
+}
+
+.search svg {
+    color: #4D90F1;
+}

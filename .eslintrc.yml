@@ -15,6 +15,7 @@ rules:
   import/extensions: "off"
   import/no-unresolved: "off"
   indent: ["error", 4]
+  linebreak-style: "warn"
   react/react-in-jsx-scope: "off"
   react/jsx-filename-extension: ["warn", { "extensions": [ ".js", ".jsx" ] } ]
   react/jsx-indent: ["error", 4, { indentLogicalExpressions: true }]

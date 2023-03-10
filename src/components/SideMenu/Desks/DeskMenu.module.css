@@ -1,0 +1,30 @@
+.buttonDesk {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    margin-right: 8px;
+    width: auto;
+    color: #252525;
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.buttonDesk svg {
+    width: 20px;
+    height: 20px;
+}
+
+.buttonDesk li {
+    color: #252525;
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.buttonDesk span {
+
+}

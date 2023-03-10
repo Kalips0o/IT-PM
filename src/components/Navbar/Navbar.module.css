@@ -1,4 +1,28 @@
-.header {
-    display: flex;
-    flex-direction: row;
+
+* {
+    box-sizing: border-box;
 }
+
+.header {
+    /*background-color: blue;*/
+    display: flex;
+    margin-left: 80px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: nowrap;
+    text-align: initial;
+}
+
+.header div {
+    display: flex;
+    justify-content: initial;
+    width: 20%;
+
+}
+
+.header div:nth-of-type(1) {
+    width: 100%;
+}
+

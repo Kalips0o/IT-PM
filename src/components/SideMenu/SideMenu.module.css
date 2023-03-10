@@ -1,5 +1,5 @@
-.side-menu {
-  margin-top: 60px;
-  margin-left: 101px;
-  margin-right: 101px;
+.sideMenu {
+  display: flex;
+  flex-direction: column;
+
 }
