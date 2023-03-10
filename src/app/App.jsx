@@ -19,9 +19,9 @@ const router = createBrowserRouter([
                 element: <MainPage />,
                 children: [],
             },
-            // TODO: replace with dynamic path later
+            // TODO: replace "id" with dynamic path later
             {
-                path: '/chatid',
+                path: '/chats/id',
                 element: <SelectedChatPage />,
                 children: [],
             },
