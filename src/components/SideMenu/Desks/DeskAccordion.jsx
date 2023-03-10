@@ -1,5 +1,5 @@
 import { Collapse } from 'antd';
-import { TableIcon } from '../../Icons';
+import { TableIcon } from '../../reused/Icons';
 import DeskMenu from './DeskMenu';
 
 const { Panel } = Collapse;

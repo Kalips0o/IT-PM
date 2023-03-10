@@ -6,7 +6,7 @@ import {
     PuzzlePieceIcon,
     StickerIcon,
     UserIcon,
-} from '../../Icons';
+} from '../../reused/Icons';
 import styles from './DeskMenu.module.css';
 
 function getItem(label, key, icon, children, type) {
