@@ -5,6 +5,7 @@ import App from './app/App.jsx';
 
 import 'antd/dist/reset.css';
 import './index.scss';
+import './styles/global.scss';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
