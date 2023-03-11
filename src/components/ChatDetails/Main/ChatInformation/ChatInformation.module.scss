@@ -1,4 +1,6 @@
 @use '../../../../styles/vars';
+@use '../../../../styles/colours';
+@use '../../../../styles/placeholders';
 
 .box {
     width: 404px;
@@ -6,11 +8,26 @@
     padding: 20px 32px 24px;
     border-radius: vars.$radius-16;
 
-    background-color: vars.$bg;
+    background-color: colours.$bg;
 
     :global {
         .ant-col {
-            border-bottom: 1px solid vars.$card-stroke;
+            font-size: vars.$fs-4;
+        }
+    }
+
+    .infoRow {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 45px;
+
+        :global {
+            .ant-row {
+                height: 39px;
+            }
+
+            @extend %default-divider;
         }
     }
 }

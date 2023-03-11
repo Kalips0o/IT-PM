@@ -1,5 +1,10 @@
-import { Row, Col, Space } from 'antd';
-import InfoRow from './InfoRow';
+import {
+    Row,
+    Col,
+    Divider,
+    Space,
+} from 'antd';
+import CustomSwitch from '../../../reused/CustomSwitch';
 
 import styles from './ChatInformation.module.scss';
 
@@ -13,13 +18,37 @@ export default function ChatInformation() {
                     display: 'flex',
                 }}
             >
-                {['ID чата', 'Участники чата', 'Подключить Chat GPT']
-                    .map((name) => <InfoRow name={name} value={123456789} key={name} />)}
-                <Row>
-                    <Col span={24}>
-                        other
-                    </Col>
-                </Row>
+                <div className={styles.infoRow}>
+                    <Row justify="space-between" align="middle">
+                        <Col>ID чата</Col>
+                        <Col>284872364237</Col>
+                    </Row>
+                    <Divider />
+                </div>
+                <div className={styles.infoRow}>
+                    <Row justify="space-between" align="middle">
+                        <Col>Участники чата</Col>
+                        <Col>462</Col>
+                    </Row>
+                    <Divider />
+                </div>
+                <div className={styles.infoRow}>
+                    <Row justify="space-between" align="middle">
+                        <Col>Подключить Chat GPT</Col>
+                        <Col>
+                            <CustomSwitch />
+                        </Col>
+                    </Row>
+                    <Divider />
+                </div>
+                <div className={styles.infoRow}>
+                    <Row justify="space-between" align="middle">
+                        <Col span={12}>
+                            Часовой пояс
+                        </Col>
+                        <Divider />
+                    </Row>
+                </div>
             </Space>
         </section>
     );
