@@ -1,20 +1,22 @@
 @use '../../../styles/vars';
+@use '../../../styles/colours';
+@use '../../../styles/placeholders';
 
 .head {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .heading {
     :global {
         .ant-typography {
-            color: vars.$dark-blue;
+            margin-bottom: 20px;
             font-weight: 400;
+            color: colours.$dark-blue;
         }
-        .ant-divider {
-            margin-bottom: 0;
-            border: 2px solid vars.$dark-blue;
-        }
+
+        @extend %h1-divider;
     }
 }
 
@@ -22,4 +24,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    :global {
+        .ant-avatar {
+            margin-left: 24px;
+        }
+    }
 }
