@@ -1,0 +1,13 @@
+@use './colours';
+
+%h1-divider {
+    .ant-divider {
+        border: 2px solid colours.$dark-blue;
+    }
+}
+
+%default-divider {
+    .ant-divider {
+        border: 1px solid colours.$card-stroke;
+    }
+}
