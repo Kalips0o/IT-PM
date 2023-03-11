@@ -19,9 +19,8 @@ const router = createBrowserRouter([
                 element: <MainPage />,
                 children: [],
             },
-            // TODO: replace "id" with dynamic path later
             {
-                path: '/chats/id',
+                path: '/chats/:chatId',
                 element: <SelectedChatPage />,
                 children: [],
             },
@@ -33,10 +32,16 @@ function App() {
     return (
         <ConfigProvider
             theme={{
-                token: {
-                    fontSizeHeading1: 32,
+                token: {},
+                components: {
+                    Typography: {
+                        fontSizeHeading1: 32,
+                        fontSizeHeading2: 24,
+                        fontSizeHeading3: 20,
+                        fontSizeHeading4: 16,
+                        fontSizeHeading5: 14,
+                    },
                 },
-                components: {},
             }}
         >
             <RouterProvider router={router} />
