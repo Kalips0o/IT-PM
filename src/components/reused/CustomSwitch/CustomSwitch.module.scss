@@ -1,0 +1,58 @@
+@use '../../../styles/vars';
+@use '../../../styles/colours';
+
+:global {
+    .ant-switch {
+        min-width: 52px;
+        height: 28px;
+        border-radius: vars.$radius-16;
+        outline: 1px solid colours.$dark-blue;
+
+        background-color: colours.$bg;
+        
+        .ant-switch-handle {
+            width: 24px;
+            height: 24px;
+        }
+
+        .ant-switch-handle::before {
+            border-radius: vars.$radius-16;
+            background-color: colours.$dark-blue;
+        }
+    
+        &.ant-switch-checked {
+            .ant-switch-handle {
+                inset-inline-start: calc(100% - 25px);
+            }
+            .ant-switch-handle::before {
+                background-color: colours.$white;
+            }
+        }
+
+        // classes for small size
+        &.ant-switch-small {
+            width: 32px;
+            height: 18px;
+            border-radius: 9.6px;
+            outline: 0.6px solid colours.$dark-blue;
+
+            .ant-switch-handle {
+                width: 14px;
+                height: 14px;
+            }
+    
+            .ant-switch-handle::before {
+                border-radius: vars.$radius-10;
+            }
+        
+            &.ant-switch-checked {
+                .ant-switch-handle {
+                    inset-inline-start: calc(100% - 15px);
+                }
+                .ant-switch-handle::before {
+                    background-color: colours.$white;
+                }
+            }
+        }
+    }
+}
